@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: sans-serif;
+  font-family: 'Grand Hotel', cursive, serif;
 }
 
 *, *::before, *::after {
@@ -18,25 +18,22 @@ html {
 }
 
 header {
-  background-image: url("../images/placeholder-3by1.svg");
-  
+  background-image: url("../images/www/placeholder-3by1.svg");
 }
 
-nav a {
+header h1,
+h2 {
+  color: #2c292a;
+}
+
+nav li, nav li a {
+  color: #2c292a;
   text-decoration: none;
-  color: black;
 }
 
-nav li {
-  background-color: pink;
-}
-
-nav li:hover {
-  background-color: #fff;
-}
-
-nav a:hover {
-  color: pink;
+nav li a:hover {
+  color: #fff;
+  background-color: #2c292a;
 }
 
 .cards {
@@ -47,7 +44,7 @@ nav a:hover {
 .card-2:hover img,
 .card-3:hover img,
 .card-4:hover img {
-  opacity: .5;
+  opacity: .7;
 }
 
 .card-1,
@@ -73,10 +70,7 @@ nav a:hover {
   width: 100%;
   text-align: center;
   z-index: 100;
-  margin: 0 0 1.3rem 0;
-  font-size: 1.3330rem;
   color: #fff;
-  font-weight: bold;
 }
 
 .card-small {
@@ -96,14 +90,7 @@ nav a:hover {
 
 .img-flex {
   display: block;
-  width: 250%;
-}
-
-.banner {
-  max-height: 24em;
-  overflow: hidden;
-  position: relative;
-
+  width: 100%;
 }
 
 .banner-content {
@@ -115,25 +102,79 @@ nav a:hover {
   width: 100%;
 }
 
+.banner-content p {
+  color: #fff;
+}
+
+.whats-new,
+.about-us,
+.locations,
+.hours,
+.contact-us {
+  font-family: sans-serif;
+  margin: auto;
+}
+
+.btn {
+  background-color: hotpink;
+  color: #000;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: hotpink;
+}
+
+footer {
+  background-color: #2c292a;
+}
+
+footer ul li a {
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer li:hover {
+  color: pink;
+}
+
+.icon {
+  max-width: 40px;
+}
+
+.icons {
+  float: right;
+}
 
 @media only screen and (min-width: 25em) {
 
   .card-small {
-      display: none;
-    }
+    display: none;
+  }
 
-    .card-big {
-      display: block;
-      width: 100%;
-    }
+  .card-big {
+    display: block;
+    width: 100%;
+  }
 
-    .card-1,
-    .card-2,
-    .card-3,
-    .card-4 {
-      width: 50%;
-      max-height: 10em;
-    }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 50%;
+    max-height: 10em;
+  }
+
+  .hours h2 {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  .hours {
+    margin: auto;
+  }
 
 }
 
@@ -158,11 +199,6 @@ nav a:hover {
   body {
     font-size: 120%;
     line-height: 1.5;
-  }
-
-  .nav {
-    display: block;
-    float: right;
   }
 
   .card-1,

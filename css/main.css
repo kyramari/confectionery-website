@@ -130,7 +130,7 @@ footer {
   background-color: #2c292a;
 }
 
-footer ul li a {
+.footer a {
   font-family: sans-serif;
   color: #fff;
   text-decoration: none;
@@ -186,11 +186,11 @@ footer li:hover {
   }
 
   .cards p {
-      top: 40%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
-      left: 50%;
-    }
+    top: 40%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+  }
 
 }
 
@@ -213,8 +213,8 @@ footer li:hover {
 @media only screen and (min-width: 90em) {
 
   body {
-      font-size: 130%;
-      line-height: 1.5;
-    }
+    font-size: 130%;
+    line-height: 1.5;
+  }
 
 }

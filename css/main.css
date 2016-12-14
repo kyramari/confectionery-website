@@ -17,8 +17,10 @@ html {
   box-sizing: inherit;
 }
 
-header {
-  background-image: url("../images/www/placeholder-3by1.svg");
+body {
+  background-image: url("../images/www/bg-img.svg");
+  background-repeat: repeat;
+  background-size: 90%;
 }
 
 header h1,
@@ -106,11 +108,8 @@ nav a:hover {
   color: #fff;
 }
 
-.whats-new,
-.about-us,
-.locations,
-.hours,
-.contact-us {
+main {
+  background-color: #fff;
   font-family: sans-serif;
   margin: auto;
 }
